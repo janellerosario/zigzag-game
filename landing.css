@@ -1,0 +1,33 @@
+body {
+  background-image: url(https://images5.alphacoders.com/336/336639.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.playerinfo {
+  color: black;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  bottom: 50%;
+}
+
+h1 {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 60px;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+button {
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+  bottom: 50%;
+  margin: 0;
+
+
+}

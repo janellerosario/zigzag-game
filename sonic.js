@@ -27,9 +27,9 @@ function movePlayer(e) {
     player.style.top = playerTop + 'px';
   }
 
-  if (playerRight === 480) {
-    rings.style.visibility='hidden';
-  }
+  // if (playerRight === 480) {
+  //   rings.style.visibility='hidden';
+  // }
 
 //   if (playerRight === 680) {
 //     clearInterval(game);

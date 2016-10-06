@@ -1,13 +1,17 @@
 body {
+  background-color: black;
 
 }
 
-#game-board {
-  height: 768px;
-  width: 1024px;
-  border: 2px solid white;
-  position: absolute;
-  background-color: black;
+.gameboard {
+display: inline-flex;
+flex-direction: row
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+height: 700px;
+width: 700px;
+background-color: grey;
 }
 
 #player {
@@ -32,23 +36,93 @@ body {
   margin: 0 auto;
 }
 
-.box1 {
-  height: 100px;
-  width: 200px;
-  background-color: white;
-  margin: 0 auto;
+.flex-item {
+  margin: 0;
+  border: 1px solid red;
+
 }
 
-.box2 {
+#box1 {
   height: 100px;
-  width: 400px;
+  width: 100px;
   background-color: white;
-  margin: 0 auto;
 }
 
-.box3 {
+#box2 {
   height: 100px;
-  width: 600px;
+  width: 100px;
   background-color: white;
-  margin: 0  auto;
 }
+
+#box3 {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+
+#box4 {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+#box5 {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+
+#box6 {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+
+#box7 {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+
+#box8 {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+
+#box9 {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+
+#box10 {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+
+#box11 {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+
+#box12 {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+
+#box13 {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+
+#box14 {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+
+}
+
