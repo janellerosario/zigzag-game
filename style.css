@@ -1,0 +1,42 @@
+body {
+background-color: orange;
+}
+
+#game-board {
+  height: 600px;
+  width: 800px;
+  border: 2px solid white;
+  position: absolute;
+}
+
+#player {
+  background-image: url(http://vignette3.wikia.nocookie.net/thefakegees/images/f/fa/Sonic_spin_gif_.gif/revision/latest?cb=20140414043145);
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.box1 {
+  height: 100px;
+  width: 200px;
+  background-color: white;
+}
+
+.box2 {
+  height: 100px;
+  width: 400px;
+  background-color: white;
+
+}
+
+.box3 {
+  height: 100px;
+  width: 600px;
+  background-color: white;
+
+}
