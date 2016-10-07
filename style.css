@@ -38,10 +38,12 @@ height: 800px;
   margin: 0;
   border: 1px solid red;
   box-sizing: border-box;
-  width: 18%;
+  background-color: white;
+  height: 100px;
+  width: 100px;
 }
 
-#box1 {
+/*#box1 {
   height: 100px;
   width: 100px;
   background-color: white;
@@ -123,5 +125,5 @@ height: 800px;
   width: 100px;
   background-color: white;
 
-}
+}*/
 
