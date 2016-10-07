@@ -1,20 +1,20 @@
 console.log('GO SONIC GO!');
 
 let player = document.getElementById('player');
-let rings = document.getElementById('rings')
-let playerRight = 0;
-let playerTop = 0;
+let rings = document.getElementById('ring')
+let playerLeft = 0; //left location
+let playerTop = 0;  // top location
 
 function movePlayer(e) {
 
   if(e.keyCode === 39) {
-    playerRight += 20;
-    player.style.left = playerRight + 'px';
+    playerLeft += 20;
+    player.style.left = playerLeft + 'px';
   }
 
   if(e.keyCode === 37) {
-    playerRight -=20;
-    player.style.left = playerRight + 'px';
+    playerLeft -=20;
+    player.style.left = playerLeft + 'px';
   }
 
     if(e.keyCode === 38) {
@@ -27,9 +27,9 @@ function movePlayer(e) {
     player.style.top = playerTop + 'px';
   }
 
-  // if (playerRight === 480) {
-  //   rings.style.visibility='hidden';
-  // }
+  if (playerLeft === 440) {
+    rings.style.visibility = 'hidden';
+  }
 
 //   if (playerRight === 680) {
 //     clearInterval(game);

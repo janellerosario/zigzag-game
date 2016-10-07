@@ -36,7 +36,6 @@ height: 800px;
 
 .flex-item {
   margin: 0;
-  border: 1px solid red;
   box-sizing: border-box;
   background-color: white;
   height: 100px;
@@ -44,7 +43,7 @@ height: 800px;
   text-align: center;
   font-weight: bold;
 }
-
+/* path for character*/
 #box1,
 #box9,
 #box17,
@@ -84,4 +83,59 @@ height: 800px;
 #box80
  {
   background-color: grey;
+  background-image: url(http://vignette3.wikia.nocookie.net/sonic/images/5/50/Wiki-background/revision/20150924142026);
+  background-repeat: no-repeat;
+}
+/* boxes with coins */
+#box19,
+#box33,
+#box57,
+#box75,
+#box28,
+#box5,
+#box23,
+#box55,
+#box78,
+#box60 {
+  background-image: url(http://vignette2.wikia.nocookie.net/sonic/images/0/00/Ring.gif/revision/20110823230238);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center;
+}
+/* dangerzone boxes */
+#box2,
+#box3,
+#box4,
+#box6,
+#box7,
+#box8,
+#box10,
+#box11,
+#box12,
+#box20,
+#box22,
+#box25,
+#box27,
+#box31,
+#box36,
+#box37,
+#box39,
+#box41,
+#box42,
+#box44,
+#box47,
+#box49,
+#box52,
+#box54,
+#box59,
+#box62,
+#box65,
+#box70,
+#box72,
+#box73,
+#box74,
+#box76,
+#box77 {
+  background-color: black;
+  border: none;
 }
