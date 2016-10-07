@@ -1,7 +1,7 @@
 console.log('GO SONIC GO!');
 
 let player = document.getElementById('player');
-let rings = document.getElementById('ring')
+let ring = document.getElementsByClassName('ring');
 let playerLeft = 0; //left location
 let playerTop = 0;  // top location
 
@@ -27,8 +27,8 @@ function movePlayer(e) {
     player.style.top = playerTop + 'px';
   }
 
-  if (playerLeft === 440) {
-    rings.style.visibility = 'hidden';
+  if (playerLeft === 640 && playerTop === 40) {
+    ring[4].style.visibility = 'hidden';
   }
 
 //   if (playerRight === 680) {

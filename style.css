@@ -1,5 +1,7 @@
 body {
   background-color: black;
+  background-image: url(https://images3.alphacoders.com/310/31075.jpg);
+  background-size: cover;
 
 
 }
@@ -10,6 +12,7 @@ flex-wrap: wrap;
 background-color: grey;
 width: 1000px;
 height: 800px;
+margin-left: 200px;
 }
 
 #player {
@@ -25,13 +28,9 @@ height: 800px;
   right: 0;
 }
 
-#rings {
-  background-image: url(http://vignette2.wikia.nocookie.net/sonic/images/0/00/Ring.gif/revision/20110823230238);
-  background-repeat: no-repeat;
-  background-size: 30px 30px;
-  height: 50px;
-  width: 50px;
-  margin: 0 auto;
+.ring-image {
+  position: center;
+  margin: 0;
 }
 
 .flex-item {
@@ -97,10 +96,7 @@ height: 800px;
 #box55,
 #box78,
 #box60 {
-  background-image: url(http://vignette2.wikia.nocookie.net/sonic/images/0/00/Ring.gif/revision/20110823230238);
-  background-repeat: no-repeat;
-  background-size: 30px 30px;
-  background-position: center;
+  background-color: red;
 }
 /* dangerzone boxes */
 #box2,
