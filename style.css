@@ -134,7 +134,11 @@ body {
 #box74,
 #box76,
 #box77 {
-
+  background-image: url(http://sonicgifs.weebly.com/uploads/2/8/3/6/28364181/3799240.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
   background-color: black;
   border: none;
+  /*visibility: hidden;*/
 }
