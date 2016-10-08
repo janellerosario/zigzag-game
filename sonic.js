@@ -27,8 +27,44 @@ function movePlayer(e) {
     player.style.top = playerTop + 'px';
   }
 
+    if (playerLeft === 440 && playerTop === 240) {
+    ring[1].style.visibility = 'hidden';
+  }
+
   if (playerLeft === 640 && playerTop === 40) {
     ring[4].style.visibility = 'hidden';
+  }
+
+  if (playerLeft === 940 && playerTop === 40 ){
+    ring[6].style.visibility = 'hidden';
+  }
+
+  if (playerLeft === 1140 && playerTop === 240){
+    ring[8].style.visibility = 'hidden';
+  }
+
+  if (playerLeft === 940 && playerTop === 340) {
+    ring[7].style.visibility = 'hidden';
+  }
+
+  if (playerLeft === 540 && playerTop === 340) {
+    ring[3].style.visibility = 'hidden';
+  }
+
+  if (playerLeft === 240 && playerTop === 440) {
+    ring[0].style.visibility = 'hidden';
+  }
+
+  if (playerLeft === 440 && playerTop === 640) {
+    ring[2].style.visibility = 'hidden';
+  }
+
+  if (playerLeft === 840 && playerTop === 640) {
+    ring[5].style.visibility = 'hidden';
+  }
+
+  if (playerLeft === 1140 && playerTop === 540) {
+    ring[9].style.visibility = 'hidden';
   }
 
 //   if (playerRight === 680) {
