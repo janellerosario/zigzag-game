@@ -2,18 +2,16 @@ body {
   background-color: black;
   background-image: url(https://images3.alphacoders.com/310/31075.jpg);
   background-size: cover;
-
-
 }
 
 .gameboard {
-display: inline-flex;
-flex-wrap: wrap;
-background-image: url(http://vignette3.wikia.nocookie.net/sonic/images/5/50/Wiki-background/revision/20150924142026);
-background-repeat: repeat;
-width: 1000px;
-height: 800px;
-margin-left: 200px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  background-image: url(http://vignette3.wikia.nocookie.net/sonic/images/5/50/Wiki-background/revision/20150924142026);
+  background-repeat: repeat;
+  width: 1000px;
+  height: 800px;
+  margin-left: 200px;
 }
 
 #player {
