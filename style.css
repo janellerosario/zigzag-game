@@ -1,14 +1,11 @@
 body {
   background-color: black;
-  background-image: url(https://images3.alphacoders.com/310/31075.jpg);
-  background-size: cover;
 }
 
 .gameboard {
   display: inline-flex;
   flex-wrap: wrap;
-  background-image: url(http://vignette3.wikia.nocookie.net/sonic/images/5/50/Wiki-background/revision/20150924142026);
-  background-repeat: repeat;
+  background-image: url(http://pre07.deviantart.net/3808/th/pre/f/2008/296/b/1/sonic_the_screensaver__october_by_professor_j.png);
   width: 1000px;
   height: 800px;
   margin-left: 200px;
@@ -43,16 +40,31 @@ body {
 }
 /* path for character*/
 #box1,
+#box3,
+#box4,
+#box6,
+#box7,
+#box8,
 #box9,
+#box11,
+#box12,
 #box17,
 #box18,
+#box20,
+#box22,
 #box26,
+#box27,
 #box34,
 #box35,
+#box41,
+#box42,
 #box43,
 #box51,
+#box49,
 #box50,
 #box58,
+#box59,
+#box65,
 #box66,
 #box67,
 #box68,
@@ -61,6 +73,7 @@ body {
 #box53,
 #box45,
 #box46,
+#box37,
 #box38,
 #box30,
 #box29,
@@ -73,15 +86,23 @@ body {
 #box32,
 #box40,
 #box48,
+#box54,
+#box62,
+#box70,
 #box56,
 #box64,
 #box63,
 #box71,
+#box72,
+#box73,
+#box76,
+#box77,
 #box79,
 #box80
  {
-  background-image: url(http://vignette3.wikia.nocookie.net/sonic/images/5/50/Wiki-background/revision/20150924142026);
-  background-repeat: no-repeat;
+  visibility: hidden;
+  /*background-image: url(http://static1.squarespace.com/static/5400bc86e4b0c1979a26b7d8/5400be1ae4b0882b9033e3bd/5481b752e4b0ad44deeab68c/1418328994741/?format=1000w);
+  background-repeat: no-repeat;*/
 }
 /* boxes with coins */
 #box19,
@@ -100,45 +121,22 @@ body {
   background-color: red;
   background-size: 30px 30px;
 }
-/* dangerzone boxes */
+/* enemy boxes */
 #box2,
-#box3,
-#box4,
-#box6,
-#box7,
-#box8,
 #box10,
-#box11,
-#box12,
-#box20,
-#box22,
 #box25,
-#box27,
 #box31,
 #box36,
-#box37,
 #box39,
-#box41,
-#box42,
 #box44,
 #box47,
-#box49,
 #box52,
-#box54,
-#box59,
-#box62,
-#box65,
-#box70,
-#box72,
-#box73,
-#box74,
-#box76,
-#box77 {
+#box74 {
   background-image: url(http://sonicgifs.weebly.com/uploads/2/8/3/6/28364181/3799240.gif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 60px 60px;
   background-color: black;
   border: none;
-  /*visibility: hidden;*/
+  visibility: hidden;
 }

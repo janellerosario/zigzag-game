@@ -87,21 +87,42 @@ function playGame(e) {
   }
 
   if (playerLeft === 480 && playerTop <= 100) {
-    enemy[0].style.visibility = 'visible';
+    enemy[2].style.visibility = 'visible';
     alert('GAME OVER!');
     location.reload();
   }
-}
 
-//   if (playerRight === 680) {
-//     clearInterval(game);
-//     alert('You died, try again!');
-//     location.reload();
-// }
-//   if (playerTop === 520) {
-//     clearInterval(game);
-//     alert('You died, try again!');
-//     location.reload();
-// }
+  if (playerTop === 140 && playerLeft === 1140) {
+    enemy[9].style.visibility = 'visible';
+    alert('GAME OVER!');
+    location.reload();
+
+  }
+
+  if (playerTop === 80 && playerLeft <=400) {
+    enemy[0].style.visibility = 'visible';
+    enemy[1].style.visibility = 'visible';
+    alert('GAME OVER!');
+    location.reload();
+
+  }
+
+  if (playerTop === 300 && playerLeft <=880) {
+    enemy[4].style.visibility = 'visible';
+    enemy[6].style.visibility = 'visible';
+    enemy[8].style.visibility = 'visible';
+    alert('GAME OVER!');
+    location.reload();
+  }
+
+  if (playerTop === 700 && playerLeft <=780) {
+    enemy[3].style.visibility = 'visible';
+    enemy[5].style.visibility = 'visible';
+    enemy[7].style.visibility = 'visible';
+    alert('GAME OVER!');
+    location.reload();
+  }
+
+}
 
 document.onkeydown = playGame;
