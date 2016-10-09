@@ -12,11 +12,13 @@ body {
   bottom: 50%;
 }
 
-.username-text {
+.username-text,
+.objective,
+.controls {
   font-family: 'Paytone One', sans-serif;
   color: red;
   background-color: black;
-  font-size: 16px;
+  font-size: 18px;
   height: 30px;
   width: 390px;
   margin: 0 auto;
@@ -33,7 +35,7 @@ body {
   font-size: 16px;
   color: red;
   height: 75px;
-  width: 390px;
+  width: 400px;
   margin: 0 auto;
   text-align: left;
   background-color: black;
@@ -41,16 +43,44 @@ body {
   font-weight: bold;
   border-radius: 10px;
   text-align: right;
-
 }
 
-h1 {
+.description,
+.buttons {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 18px;
+  color: red;
+  height: 120px;
+  width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: black;
+  opacity: 0.8;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.title {
   font-family: 'Paytone One', sans-serif;
   font-size: 60px;
   color: black;
   text-align: center;
   margin: 0;
 }
+
+.directions {
+  font-family: 'Paytone One', sans-serif;
+  width: 390px;
+  height: 150px;
+  font-size: 16px;
+  color: red;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+
 
 button {
   font-family: 'Paytone One', sans-serif;
