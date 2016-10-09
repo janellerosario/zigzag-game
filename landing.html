@@ -6,20 +6,46 @@
   <title>SONIC ZIG-ZAG</title>
   <link rel="stylesheet" href="landing.css">
   <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="sonic.js"></script>
 </head>
 <body>
-<h1>Sonic ZigZag</h1>
+<h1>Sonic ZigZag</h1><br>
   <div class='playerinfo'>
-    <label>Username</label><br>
-    <input placeholder='username' type='text' value name='username'><br>
-    <label>E-mail Address</label><br>
-    <input placeholder="e-mail" type='text' value name='email'>
+  <div class='username-text'>Enter your username and email to play:</div>
+    <div class='username-box'>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <table>
+              <tbody>
+              <tr>
+                <td>
+                    Username:
+                </td>
+                <td>
+                  <input placeholder='username' type='text' value name='username'>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Email:
+                </td>
+                <td>
+                  <input placeholder="e-mail" type='text' value name='email'>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </td>
+          <td rowspan="2">
+           <form method="get" action="index.html">
+           <button type="start-button">PLAY</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-      <form method="get" action="index.html">
-      <button type="start-button">PLAY</button>
 
-<script src="sonic.js" charset="utf-8"></script>
+
 </body>
 </html>

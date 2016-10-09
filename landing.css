@@ -6,10 +6,42 @@ body {
 
 .playerinfo {
   color: black;
-  height: 200px;
-  width: 200px;
+  height: 400px;
+  width: 331px;
   margin: 0 auto;
   bottom: 50%;
+}
+
+.username-text {
+  font-family: 'Paytone One', sans-serif;
+  color: red;
+  background-color: black;
+  font-size: 16px;
+  height: 30px;
+  width: 390px;
+  margin: 0 auto;
+  bottom: 50%;
+  text-align: center;
+  opacity: 0.8;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid red;
+}
+
+.username-box {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 16px;
+  color: red;
+  height: 75px;
+  width: 390px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: black;
+  opacity: 0.8;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: right;
+
 }
 
 h1 {
@@ -21,12 +53,15 @@ h1 {
 }
 
 button {
-  height: 100px;
-  width: 100px;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 16px;
+  height: 56px;
+  width: 112px;
+  background-color: black;
+  color: red;
+  opacity: 0.8;
+  font-weight: bold;
   border-radius: 20px;
-  background-color: red;
-  color: white;
-  bottom: 50%;
 }
 
 
