@@ -118,7 +118,7 @@ body {
   background-image: url(http://vignette2.wikia.nocookie.net/sonic/images/0/00/Ring.gif/revision/20110823230238);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: red;
+  background-color: black;
   background-size: 30px 30px;
 }
 /* enemy boxes */
@@ -140,3 +140,31 @@ body {
   border: none;
   visibility: hidden;
 }
+/* ----------- iPad mini ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+/* ----------- iPad 1 and 2 ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+
+

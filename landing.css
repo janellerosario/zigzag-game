@@ -2,6 +2,7 @@ body {
   background-image: url(https://images5.alphacoders.com/336/336639.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: black;
 }
 
 .playerinfo {
@@ -79,8 +80,6 @@ body {
   opacity: 0.8;
   border-radius: 10px;
 }
-
-
 
 button {
   font-family: 'Paytone One', sans-serif;

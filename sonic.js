@@ -1,128 +1,122 @@
 console.log('GO SONIC GO!');
 
-let player = document.getElementById('player');
-let ring = document.getElementsByClassName('ring');
-let enemy = document.getElementsByClassName('enemy');
-//left location
-let playerLeft = 0;
-// top location
-let playerTop = 0;
-let ringCounter =-1;
+var $player = $('#player');
+var $ring = $('.ring');
+var $enemy = $('.enemy');
+var $ringCounter = 0;
 
-function playGame(e) {
-//move right press L
-  if(e.keyCode === 76) {
-    playerLeft += 20;
-    player.style.left = playerLeft + 'px';
-  }
-// move left press J
-  if(e.keyCode === 74) {
-    playerLeft -=20;
-    player.style.left = playerLeft + 'px';
-  }
-// move up press I
-    if(e.keyCode === 73) {
-    playerTop -= 20;
-    player.style.top = playerTop + 'px';
-  }
-// move down press K
-    if(e.keyCode === 75) {
-    playerTop += 20;
-    player.style.top = playerTop + 'px';
-  }
 
-    if (playerLeft === 440 && playerTop === 240) {
-    ring[1].style.visibility = 'hidden';
-    ringCounter++;
-  }
+$(document).keydown(function playGame (e) {
+switch (e.which) {
+  // move right with L
+  case 76:
+  $player.css('left', $player.position().left +20);
+  break;
+  // move left with J
+  case 74:
+  $player.css('left', $player.position().left -20);
+  break;
+  // move up with I
+  case 73:
+  $player.css('top', $player.position().top -20);
+  break;
+  // move down with K
+  case 75:
+  $player.css('top', $player.position().top +20);
+  break;
+};
 
-  if (playerLeft === 640 && playerTop === 40) {
-    ring[4].style.visibility = 'hidden';
-    ringCounter++;
-  }
+    if ($player.position().left === 440  && $player.position().top === 240) {
+    ($ring).eq(1).css('visibility', 'hidden');
+    ($ringCounter)++;
+  };
 
-  if (playerLeft === 940 && playerTop === 40 ){
-    ring[6].style.visibility = 'hidden';
-    ringCounter++;
-  }
+    if ($player.position().left === 640 && $player.position().top === 40) {
+    ($ring).eq(4).css('visibility', 'hidden');
+    ($ringCounter)++;
+  };
 
-  if (playerLeft === 1140 && playerTop === 240){
-    ring[8].style.visibility = 'hidden';
-    ringCounter++;
-  }
+    if ($player.position().left === 940 && $player.position().top === 40 ){
+    ($ring).eq(6).css('visibility', 'hidden');
+    ($ringCounter)++;
+  };
 
-  if (playerLeft === 940 && playerTop === 340) {
-    ring[7].style.visibility = 'hidden';
-    ringCounter++;
-  }
+    if ($player.position().left === 1140 && $player.position().top === 240){
+    ($ring).eq(8).css('visibility', 'hidden');
+    ($ringCounter)++;
+  };
 
-  if (playerLeft === 540 && playerTop === 340) {
-    ring[3].style.visibility = 'hidden';
-    ringCounter++;
-  }
+    if ($player.position().left === 940 && $player.position().top === 340) {
+    ($ring).eq(7).css('visibility', 'hidden');
+    ($ringCounter)++;
+  };
 
-  if (playerLeft === 240 && playerTop === 440) {
-    ring[0].style.visibility = 'hidden';
-    ringCounter++;
-  }
+    if ($player.position().left === 540 && $player.position().top === 340) {
+    ($ring).eq(3).css('visibility', 'hidden');
+    ($ringCounter)++;
+  };
 
-  if (playerLeft === 440 && playerTop === 640) {
-    ring[2].style.visibility = 'hidden';
-    ringCounter++;
-  }
+    if ($player.position().left === 240 && $player.position().top === 440) {
+    ($ring).eq(0).css('visibility', 'hidden');
+    ($ringCounter)++;
+  };
 
-  if (playerLeft === 840 && playerTop === 640) {
-    ring[5].style.visibility = 'hidden';
-    ringCounter++;
-  }
+  if ($player.position().left === 440 && $player.position().top === 640) {
+    ($ring).eq(2).css('visibility', 'hidden');
+    ($ringCounter)++;
+  };
 
-  if (playerLeft === 1140 && playerTop === 540) {
-    ring[9].style.visibility = 'hidden';
-    ringCounter++;
-  }
+    if ($player.position().left === 840 && $player.position().top === 640) {
+    ($ring).eq(5).css('visibility', 'hidden');
+    ($ringCounter)++;
+  };
 
-  if (ringCounter === 10) {
+    if ($player.position().left === 1140 && $player.position().top === 540) {
+    ($ring).eq(9).css('visibility', 'hidden');
+    ($ringCounter)++;
+  };
+
+    if ($ringCounter === 10) {
     alert('YOU WIN! LEVEL 1 COMPLETE!');
     location.reload();
-  }
+  };
 
-  if (playerLeft === 480 && playerTop <= 100) {
-    enemy[2].style.visibility = 'visible';
+// 10 hidden enemies (crabmeats) that kill you & restart game
+
+  if ($player.position().left === 480 && $player.position().top <= 100) {
+    ($enemy).eq(2).css('visibility', 'visible');
     alert('GAME OVER!');
     location.reload();
-  }
+  };
 
-  if (playerTop === 140 && playerLeft === 1140) {
-    enemy[9].style.visibility = 'visible';
+
+  if ($player.position().left === 1140 && $player.position().top === 140) {
+    ($enemy).eq(9).css('visibility', 'visible');
     alert('GAME OVER!');
     location.reload();
+  };
 
-  }
-
-  if (playerTop === 80 && playerLeft <=400) {
-    enemy[0].style.visibility = 'visible';
-    enemy[1].style.visibility = 'visible';
+  if ($player.position().left <= 400 && $player.position().top === 80) {
+    ($enemy).eq(0).css('visibility', 'visible');
+    ($enemy).eq(1).css('visibility', 'visible');
     alert('GAME OVER!');
     location.reload();
+  };
 
-  }
-
-  if (playerTop === 300 && playerLeft <=880) {
-    enemy[4].style.visibility = 'visible';
-    enemy[6].style.visibility = 'visible';
-    enemy[8].style.visibility = 'visible';
+    if ($player.position().left <= 880 && $player.position().top === 300) {
+    ($enemy).eq(4).css('visibility', 'visible');
+    ($enemy).eq(6).css('visibility', 'visible');
+    ($enemy).eq(8).css('visibility', 'visible');
     alert('GAME OVER!');
     location.reload();
-  }
+  };
 
-  if (playerTop === 700 && playerLeft <=780) {
-    enemy[3].style.visibility = 'visible';
-    enemy[5].style.visibility = 'visible';
-    enemy[7].style.visibility = 'visible';
+    if ($player.position().left <= 780 && $player.position().top === 700) {
+    ($enemy).eq(3).css('visibility', 'visible');
+    ($enemy).eq(5).css('visibility', 'visible');
+    ($enemy).eq(7).css('visibility', 'visible');
     alert('GAME OVER!');
     location.reload();
-  }
+  };
 
-}
-
-document.onkeydown = playGame;
+});
