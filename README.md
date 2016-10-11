@@ -3,7 +3,7 @@ ZigZag Game
 
 Welcome to my Sonic Zig-zag game!
 
-![Sonic Zig-zag Landing](http://imgur.com/a/pI6OA)
+![Sonic Zig-zag Landing](https://imgur.com/a/pI6OA)
 
 
 Inspiration:
