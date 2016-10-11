@@ -1,5 +1,6 @@
 console.log('GO SONIC GO!');
-//display user information
+//display user information - got this code from another classmate, not sure where
+// they got it from but i changed it around to work for my form.
 let query = window.location.search.substring(1);
 let urlStringUser = query.split("&");
 
@@ -110,7 +111,7 @@ switch (e.which) {
     location.reload();
   };
 
-// 10 hidden enemy (crabmeats) locations that kill you & restart game
+// 13 hidden enemy (crabmeats) locations that kill you & restart game
 
   if ($player.position().left === 240 && $player.position().top === 140) {
     ($enemy).eq(0).css('visibility', 'visible');
