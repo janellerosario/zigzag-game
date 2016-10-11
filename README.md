@@ -8,6 +8,8 @@ Welcome to my Sonic Zig-zag game!
 
 ##Inspiration:
 
+![iPhone Game Inspiration](http://i.imgur.com/uEnbhIO.png)
+![iPhone Game Inspiration2] (http://i.imgur.com/v4BJnRI.png)
 The creation of this game was inspired the iPhone app game called zig-zag, but I thought it would be cool to have the ball that's moving around the screen be a character. The first one who came to mind was Sonic,
 so in this game he zig zags around the board in a somewhat similar fashion collecting rings (instead of diamonds).
 
@@ -33,6 +35,8 @@ I mocked up the landing page based off of Spotify web login page (seen here: htt
 
 
 ##Game board: 
+
+![Game Board Flexbox] (http://i.imgur.com/dqqhG7R.jpg)
 
 To build the board I used flexbox to make a grid of 10 rows of 8. I have 80 divs and for each coin and enemy I have them in their own boxes able to be identified so I could add different events to them. For the rings I have triggered the CSS to become invisible once you have collected them and for the enemies since I have them hidden, when they are rolled over by Sonic, they become visible and reload the page.
 I coded all of those events in jQuery. I used a switch statement for the movements and a bunch of if statements for each landing point of the rings and each enemy. I'm sure there's an easier way, but this is what I could figure out because I didn't have too much time to figure out more and implement it correctly. I also realized I couldn't have a 3D type board so I went with using Sonic screen grabs to make it a bit more fun and nostalgic.
