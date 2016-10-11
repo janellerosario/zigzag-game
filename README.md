@@ -10,6 +10,7 @@ Welcome to my Sonic Zig-zag game!
 
 ![iPhone Game Inspiration](http://i.imgur.com/uEnbhIO.png)
 ![iPhone Game Inspiration2] (http://i.imgur.com/v4BJnRI.png)
+
 The creation of this game was inspired the iPhone app game called zig-zag, but I thought it would be cool to have the ball that's moving around the screen be a character. The first one who came to mind was Sonic,
 so in this game he zig zags around the board in a somewhat similar fashion collecting rings (instead of diamonds).
 
